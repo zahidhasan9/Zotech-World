@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+  .text-balance {
+    text-wrap: balance;
+  }
+  .baner{
+    background: #000000;
+    border-bottom: 1px solid #3B373D;
+  }
+  .navbackground{
+    background: linear-gradient(180deg, #000, #0000);
+    border-bottom: 1px solid #3B373D;
+    transition: .8s ease;
+    background-color: #360808;
+    
+  }
+  .navbackground:hover{
+   background-color: #000000;
+  
+ }
+ .nav-item{
+  font-family:sans-serif ;
+  font-weight: 500;
+  line-height: 15px;
+  margin: 0;
+  padding: 17px 0;
+  color: #ffffff;
+  gap: 15px;
+ }
+ .nav-item li{
+  font-weight: 600;
+  line-height: 15px;
+  margin: 0;
+  padding: 17px 0;
+
+ }
+ .logbar{
+  display: flex;
+  gap: 18px;
+  padding: 5px;
+ }
+ .logbar div{
+  height: 18px ;
+  width: 20px;
+  fill: #aa1717;
+  color: rebeccapurple;
+  font-weight: 600;
+ }
+ 
+ 
+  
+
+
+
+}
