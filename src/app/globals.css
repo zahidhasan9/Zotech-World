@@ -48,14 +48,8 @@
   }
 
   /* -------------------------------start project--------------------------- */
-  .cool {
-    fill: #f70101 !important;
-    color: #aa1717;
-    stroke: #e90606;
-  }
-  .feather feather-search {
-    color: #f70101;
-    stroke: #e00101 !important;
-    fill: #f70101 !important;
+  .logo:hover {
+    fill: #0a0a0a;
+    color: #000000;
   }
 }

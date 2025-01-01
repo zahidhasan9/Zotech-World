@@ -16,7 +16,8 @@
     "next": "14.2.8",
     "react": "^18",
     "react-dom": "^18",
-    "styled-icons": "^10.47.1"
+    "styled-icons": "^10.47.1",
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
     "postcss": "^8",
