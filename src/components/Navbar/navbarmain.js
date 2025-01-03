@@ -1,4 +1,7 @@
 'use client';
+import { HiOutlineShoppingBag } from 'react-icons/hi2';
+import { FiUser, FiSearch } from 'react-icons/fi';
+import NavmenuButton from './assets/navmenuButton';
 import SearchIcon from './assets/searchIcon';
 import UserIcon from './assets/UserIcon';
 import BagIcon from './assets/BagIcon';
@@ -7,9 +10,9 @@ function navbarmain() {
   return (
     <>
       <div className='flex  bg-slate-500 justify-between px-5 py-5'>
-        <div className='h-5 w-5 bg-slate-300 rounded-full '>logo</div>
+        <div className='logoweb  '>logo</div>
         <div>
-          <ul className='flex gap-x-2'>
+          <ul className='flex gap-x-2 font-semibold fontcolor'>
             <li>Product</li>
             <li>Services</li>
             <li>Contact</li>
@@ -17,9 +20,12 @@ function navbarmain() {
           </ul>
         </div>
         <div className=' flex gap-x-2'>
-          <SearchIcon className='h-5 w-5 ' />
-          <UserIcon className='h-5 w-5 ' />
-          <BagIcon className='h-5 w-5 hover:fill-black' />
+          <FiSearch className='h-6 w-6 logo ' />
+          <HiOutlineShoppingBag className='h-6 w-6 logo' />
+          <FiUser className='h-6 w-6 logo ' />
+        </div>
+        <div className='menue flex justify-center items-center h-8 w-8 relative  overflow- bg-slate-800  md:hidden '>
+          <NavmenuButton className='' />
         </div>
       </div>
     </>

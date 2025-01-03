@@ -47,9 +47,84 @@
     font-weight: 600;
   }
 
+  /* ------------------nav menu battom------------- */
+  /* From Uiverse.io by Cevorob */
+  .burger {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+
+  .burger input {
+    display: none;
+  }
+
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: rgb(248, 247, 247);
+    border-radius: 8px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 22px;
+    left: 5px;
+  }
+
   /* -------------------------------start project--------------------------- */
+  .logoweb {
+    color: rgb(229, 236, 229);
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0px;
+    padding: 0px;
+  }
+  .fontcolor {
+    color: white;
+  }
+  .logo {
+    color: white;
+  }
   .logo:hover {
-    fill: #0a0a0a;
-    color: #000000;
+    /* fill: #ec0c0c; */
+    color: #d81212;
   }
 }
