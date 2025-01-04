@@ -4,7 +4,7 @@ export default function navmenuButton() {
   return (
     /* From Uiverse.io by Cevorob */
     <div className=''>
-      <label className='burger' for='burger'>
+      <label className='burger' htmlFor='burger'>
         <input type='checkbox' id='burger' />
         <span></span>
         <span></span>

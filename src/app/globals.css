@@ -6,6 +6,10 @@
   .text-balance {
     text-wrap: balance;
   }
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
   .baner {
     background: #000000;
     border-bottom: 1px solid #3b373d;
@@ -110,15 +114,20 @@
   }
 
   /* -------------------------------start project--------------------------- */
+  /* navbar css */
   .logoweb {
     color: rgb(229, 236, 229);
     font-size: 20px;
     font-weight: 800;
-    margin: 0px;
-    padding: 0px;
+    background-color: #aa1717;
   }
   .fontcolor {
-    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 15px;
+    margin: 0;
+    color: #ffffff;
+    background-color: #aa1717;
   }
   .logo {
     color: white;
@@ -126,5 +135,19 @@
   .logo:hover {
     /* fill: #ec0c0c; */
     color: #d81212;
+  }
+
+  /* sidebar css */
+  .login {
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1.5px solid red;
+
+    /* border-bottom: 1px solid #3b373d; */
+  }
+  .menueitem > li {
+    padding: 2px;
   }
 }
