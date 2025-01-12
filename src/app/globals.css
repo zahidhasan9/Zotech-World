@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +14,7 @@
     format('woff2');
   unicode-range: U+0370-03FF;
 }
+
 
 @layer components {
   .text-balance {
@@ -143,9 +146,11 @@
     font-weight: 800;
   }
   .fontcolor {
-    font-family: sans-serif, MiSans Latin;
+    /* font-family: sans-serif, MiSans Latin; */
+    /* font-family: "MiSans","Latin",; */
+    font-family: "Noto Sans";
     font-weight: 300;
-    font-size: 15px;
+    font-size: 16px;
     margin: 0;
     color: rgb(10, 10, 10);
   }
@@ -187,5 +192,28 @@
     .BannerImg {
       height: 360px;
     }
+  }
+  h1{
+    font-size: 190px;
+    /* font-family: "Playwrite VN", serif ; */
+    
+    
+  }
+
+  /* ----------Featured Css--------- */
+  @media screen and (min-width: 721px) and (max-width: 1024px) {
+    .info {
+     
+      grid-template-columns: repeat(4, minmax(0, 2fr));
+    }
+    .Tb1 .imgtb{
+      height: 261px;
+      width: 431px;
+      
+    }
+    .Tb2 .imgtb2 {
+        height: 115px;
+        width: 115px;    
+        }
   }
 }

@@ -11,6 +11,11 @@ module.exports = {
       padding: '10px',
     },
     extend: {
+      fontFamily: {
+        Playwrite: ['Playwrite VN', 'serif'],
+        Noto_Sans: ['Noto_Sans', 'serif'],
+        Montserrat_Sans: ['Montserrat', 'serif'],
+      },
       colors: {
         // background: "var(--background)",
         // foreground: "var(--foreground)",
