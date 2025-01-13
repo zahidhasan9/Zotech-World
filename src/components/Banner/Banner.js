@@ -20,7 +20,7 @@ const Slide = [
     alt: 'img1',
     title: 'xiaomi 18 Pro',
     details:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const Slide = [
     alt: 'img1',
     title: 'xiaomi Note 18 ',
     details:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const Slide = [
     alt: 'img1',
     title: 'xiaomi x8 Pro',
     details:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   },
 ];
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
@@ -48,7 +48,7 @@ function Banner() {
         options={{
           rewind: true,
           type: 'loop',
-          autoplay: 'play',
+          // autoplay: 'play',
 
           // padding: '5rem',
         }}
@@ -56,8 +56,23 @@ function Banner() {
         className='Banner'
       >
         {Slide.map((data, index) => (
-          <SplideSlide key={index}>
-            <Image className='BannerImg w-full' src={data.src} alt={data.alt} />
+          <SplideSlide className='' key={index}>
+            <Image
+              className=' BannerImg w-full  relative'
+              src={data.src}
+              alt={data.alt}
+            />
+            <div className='absolute bottom-16 pl-16 w-[40%]'>
+              <p className='font-Noto_Sans  hover:[opacity:80%] font-semibold  text-fuchsia-700 text-3xl'>
+                {data.title}
+              </p>
+              <p className='font-Noto_Sans  hover:[opacity:80%] font-semibold  text-fuchsia-700 text-1xl'>
+                {data.details}
+              </p>
+              <button className='font-Noto_Sans rounded-md mt-1 py-1 px-3 hover:[opacity:80%] font-semibold bg-black text-white'>
+                Learn more
+              </button>
+            </div>
           </SplideSlide>
         ))}
       </Splide>

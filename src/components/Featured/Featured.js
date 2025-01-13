@@ -80,7 +80,6 @@ export default function Featured() {
             </button>
           </div>
         </div>
-        <h1 className=''>rimel Hasan</h1>
       </div>
     </>
   );
