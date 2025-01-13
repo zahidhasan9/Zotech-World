@@ -207,9 +207,12 @@
       grid-template-columns: repeat(4, minmax(0, 2fr));
     }
     .Tb1 .imgtb{
-      height: 261px;
-      width: 431px;
+      /* height: 261px;
+      width: 431px; */
       
+    };
+    .Tbinfo{
+      display: none;
     }
     .Tb2 .imgtb2 {
         height: 115px;

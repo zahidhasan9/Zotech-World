@@ -15,14 +15,14 @@ export default function Featured() {
           Featured Item
         </div>
         <div className=' info p-3 rounded-[10px] bg-white grid lg:grid-cols-4 md:grid-col-4  sm:grid-col-2'>
-          <div className='Tb1 lg:h-[340px] lg:w-[676px]  col-span-2 '>
+          <div className='Tb1 lg:h-[340px] lg:w-[676px]   col-span-2 bg-[#F9F9F9]'>
             <Image
-              className=' imgtb object-cover bg-[#F7F7F7]'
+              className=' imgtb object-cover md:h-[261px] md:w-[431px] lg:h-[340px] lg:w-[676px]'
               src={Tb1}
               alt='img1'
             />
           </div>
-          <div className='lg:h-[340px] lg:w-[676px] md:p-0 sm:p-16   flex flex-col justify-center items-center col-span-2 bg-[#F9F9F9]'>
+          <div className=' Tbinfo lg:h-[340px] lg:w-[676px] p-10 md:p-5 sm:p-16   flex flex-col justify-center items-center col-span-2 bg-[#F9F9F9]'>
             <p className='font-Playwrite text-3xl'>All-Star_Team</p>
             <p className='font-Noto_Sans text-base font-medium'>
               Redmi Note series | Watch 5 | Buds 6 Pro
@@ -39,6 +39,9 @@ export default function Featured() {
             <p className='font-Montserrat_Sans text-sm font-light text-center mx-2'>
               200MP pro-grade AI camera system
             </p>
+            <button className='font-Noto_Sans rounded-md mt-1 py-1 px-3 hover:[opacity:80%] font-semibold bg-black text-white'>
+              Learn more
+            </button>
           </div>
           <div className='Tb2 h-[340px] col-span-1 mt-2 ml-2.5 flex flex-col justify-center items-center bg-[#F7F7F7]'>
             <Image className=' imgtb2 object-cover ' src={Tb2} alt='img2' />
@@ -48,8 +51,11 @@ export default function Featured() {
             <p className='font-Montserrat_Sans text-sm font-light text-center mx-2'>
               5500mAh battery with 45W turbo charging
             </p>
+            <button className='font-Noto_Sans rounded-md mt-1 py-1 px-3 hover:[opacity:80%] font-semibold bg-black text-white'>
+              Learn more
+            </button>
           </div>
-          <div className='h-[340px] col-span-1 mt-2 ml-2.5 flex flex-col justify-center items-center bg-[#F7F7F7]'>
+          <div className='h-[340px] col-span-1 mt-2 md:ml-2.5 sm:ml-2.5 flex flex-col justify-center items-center bg-[#F7F7F7]'>
             <Image className='h-[114px] w-[114px]' src={Tb3} />
             <p className='font-Noto_Sans text-base font-medium'>
               Redmi Watch 5
@@ -57,6 +63,9 @@ export default function Featured() {
             <p className='font-Montserrat_Sans text-sm font-light text-center mx-2'>
               2.07" ultra-thin bezel AMOLED display
             </p>
+            <button className='font-Noto_Sans rounded-md mt-1 py-1 px-3 hover:[opacity:80%] font-semibold bg-black text-white'>
+              Learn more
+            </button>
           </div>
           <div className='h-[340px] col-span-1 mt-2 ml-2.5 flex flex-col justify-center items-center bg-[#F7F7F7]'>
             <Image className='h-[114px] w-[114px]' src={Tb4} />
@@ -64,8 +73,11 @@ export default function Featured() {
               Redmi Buds 6 Pro
             </p>
             <p className='font-Montserrat_Sans text-sm font-light text-center mx-2'>
-              item-info__translate
+              Coaxial triple drivers for enriched highs
             </p>
+            <button className='font-Noto_Sans rounded-md mt-1 py-1 px-3 hover:[opacity:80%] font-semibold bg-black text-white'>
+              Learn more
+            </button>
           </div>
         </div>
         <h1 className=''>rimel Hasan</h1>
