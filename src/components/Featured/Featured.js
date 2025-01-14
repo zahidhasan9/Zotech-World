@@ -43,7 +43,7 @@ export default function Featured() {
               Learn more
             </button>
           </div>
-          <div className='Tb2 h-[340px] col-span-1 mt-2 ml-2.5 flex flex-col justify-center items-center bg-[#F7F7F7]'>
+          <div className='Tb2 h-[340px] h- col-span-1 mt-2 ml-2.5 flex flex-col justify-center items-center bg-[#F7F7F7]'>
             <Image className=' imgtb2 object-cover ' src={Tb2} alt='img2' />
             <p className='font-Noto_Sans text-base font-medium'>
               Redmi Note 14 Pro

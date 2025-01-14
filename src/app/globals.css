@@ -217,6 +217,41 @@
     .Tb2 .imgtb2 {
         height: 115px;
         width: 115px;    
-        }
-  }
+    }
+
+    
+   }
+
+
+     /* ---footer---css */
+     .InputFooter {
+       border-radius: 6px;
+      background-color: transparent;
+       border: 1px solid #ffff;
+       box-shadow: none;
+       box-sizing: border-box;
+       color: #fff;
+       /* flex-grow: 1; */
+      padding-inline-end: 26px;
+      font-size: 15px;
+        padding-inline-start: 8px;
+       
+          
+     }
+  
+     @media screen and (min-width: 400px) and (max-width: 721px) {
+       .InputFooter {
+        border-radius: 6px;
+        font-size: 12px;
+        height: 24px;
+        padding-inline-end: 26px;
+        padding-inline-start: 8px;
+        width: 100%;
+       
+  
+       }
+      }
+
+   
+  
 }
