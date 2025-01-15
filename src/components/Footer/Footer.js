@@ -92,28 +92,28 @@ export default function Footer() {
           </div>
         </div>
         <div className=' bg-[rgb(25,25,25)]  col-span-6  -row-start-1  lg:col-start-7 lg:col-end-9'>
-          <div className='flex justify-between px-12 lg:flex-col '>
+          <div className='flex justify-between px-12 lg:py-5 lg:flex-col '>
             <div className='p-2  '>
               <p className='text-white font-Montserrat_Sans font-bold my-2 py-1 max-[700px]:text-xs'>
                 Follow Zoteach
               </p>
               <div className='flex  gap-x-2'>
                 <div className=' bg-red-800 rounded-[50px] h-10 w-10 flex justify-center items-center'>
-                  <FaFacebookSquare className=' lg:h-8 lg:w-8 md:h-8 md:w-8 sm:h-8 sm:w-6 h-6 w-6 cursor-pointer' />
+                  <FaFacebookSquare className=' lg:h-8 lg:w-8 md:h-8 md:w-8 sm:h-8 sm:w-6 h-6 w-6 cursor-pointer hover:text-[white]' />
                 </div>
                 <div className=' bg-red-800 rounded-[50px] h-10 w-10 flex justify-center items-center'>
-                  <FaYoutube className='lg:h-8 lg:w-8 md:h-8 md:w-8 sm:h-8 sm:w-6 h-6 w-6 cursor-pointer' />
+                  <FaYoutube className='lg:h-8 lg:w-8 md:h-8 md:w-8 sm:h-8 sm:w-6 h-6 w-6 cursor-pointer hover:text-[white]' />
                 </div>
                 <div className=' bg-red-800 rounded-[50px] h-10 w-10 flex justify-center items-center'>
-                  <FaXTwitter className='lg:h-8 lg:w-8 md:h-8 md:w-8 sm:h-8 sm:w-6 h-6 w-6 cursor-pointer' />
+                  <FaXTwitter className='lg:h-8 lg:w-8 md:h-8 md:w-8 sm:h-8 sm:w-6 h-6 w-6 cursor-pointer hover:text-[white]' />
                 </div>
                 <div className=' bg-red-800 rounded-[50px] h-10 w-10 flex justify-center items-center'>
-                  <AiFillInstagram className='lg:h-8 lg:w-8 md:h-8 md:w-8 sm:h-8 sm:w-6 h-6 w-6 cursor-pointer' />
+                  <AiFillInstagram className='lg:h-8 lg:w-8 md:h-8 md:w-8 sm:h-8 sm:w-6 h-6 w-6 cursor-pointer hover:text-[white]' />
                 </div>
               </div>
             </div>
-            <div className=' flex flex-col  items-start px-12 p-2'>
-              <p className='text-white font-Montserrat_Sans font-semibold  my-2 py-2 max-[700px]:text-xs'>
+            <div className=' flex flex-col  items-start px-12 p-2 lg:p-2'>
+              <p className='text-white font-Montserrat_Sans font-semibold lg:text-[12px] my-2 py-2 max-[700px]:text-xs'>
                 Enter your email address to subscribe to our newsletters
               </p>
               <from>
