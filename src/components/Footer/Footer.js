@@ -92,7 +92,7 @@ export default function Footer() {
           </div>
         </div>
         <div className=' bg-[rgb(25,25,25)]  col-span-6  -row-start-1  lg:col-start-7 lg:col-end-9'>
-          <div className='flex justify-between px-12 lg:py-5 lg:flex-col '>
+          <div className='flex justify-between px-12 lg:py-5 lg:flex-col max-[700px]:flex-col '>
             <div className='p-2  '>
               <p className='text-white font-Montserrat_Sans font-bold my-2 py-1 max-[700px]:text-xs'>
                 Follow Zoteach
@@ -112,11 +112,11 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className=' flex flex-col  items-start px-12 p-2 lg:p-2'>
-              <p className='text-white font-Montserrat_Sans font-semibold lg:text-[12px] my-2 py-2 max-[700px]:text-xs'>
+            <div className=' flex flex-col  items-start px-12 p-2 lg:p-2 max-[700px]:px-3'>
+              <p className='text-white font-Montserrat_Sans font-semibold lg:text-[12px] my-2  max-[700px]:text-xs '>
                 Enter your email address to subscribe to our newsletters
               </p>
-              <from>
+              <from className='max-[700px]:w-[80%]'>
                 <input
                   className='InputFooter'
                   name='email'

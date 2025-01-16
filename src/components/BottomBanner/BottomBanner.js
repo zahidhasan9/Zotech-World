@@ -70,22 +70,6 @@ const Slide = [
     details:
       '400 ISO,auto-focus, Dolby Audio™ and seamless connectivity, rock your audio-visual world.',
   },
-  {
-    id: 8,
-    src: ImgDream,
-    alt: 'img1',
-    title: 'Xiaomi Smart Projector L1 Pro',
-    details:
-      '400 ISO,auto-focus, Dolby Audio™ and seamless connectivity, rock your audio-visual world.',
-  },
-  {
-    id: 9,
-    src: ImgDream,
-    alt: 'img1',
-    title: 'Xiaomi Smart Projector L1 Pro',
-    details:
-      '400 ISO,auto-focus, Dolby Audio™ and seamless connectivity, rock your audio-visual world.',
-  },
 ];
 
 function BottomBanner() {
@@ -128,19 +112,20 @@ function BottomBanner() {
         >
           <SplideTrack>
             {Slide.map((data, index) => (
-              <SplideSlide className='flex justify-center px-2' key={index}>
-                <div className='flex flex-col justify-between bg-gray-600 py-10 rounded-[10px] lg:h-[480px] lg:w-[664px] md:h-[346px] md:w-[442px] max-[450px]:h-[200px] max-[450px]:w-[280px] '>
-                  <Image className='  w-full' src={data.src} alt={data.alt} />
-                  <div className='pl-16 '>
-                    <p className='font-Noto_Sans  hover:[opacity:80%] font-semibold  text-black-700 text-sm'>
+              <SplideSlide className='flex justify-center px-1' key={index}>
+                <div className=' bg-[#FFFFFF] pb-2 rounded-[20px] lg:h-[420px] lg:w-[664px] md:h-[346px] md:w-[442px] max-[450px]:h-[190px] max-[450px]:w-[280px] max-[450px]:bg-transparent'>
+                  <Image
+                    className='  w-full rounded-t-[20px]'
+                    src={data.src}
+                    alt={data.alt}
+                  />
+                  <div className='p-5 '>
+                    <p className=' font-Noto_Sans hover:[opacity:80%] font-semibold  text-black-700 md:text-2xl max-[450px]:text-sm'>
                       {data.title}
                     </p>
-                    <p className='font-Noto_Sans  hover:[opacity:80%] font-semibold  text-black-700 text-1xl'>
+                    <p className='m-1 font-Montserrat_Sans  hover:[opacity:80%] font-light text-black-700 lg:text-sm md:text-sm sm:text-xs text-center max-[450px]:hidden'>
                       {data.details}
                     </p>
-                    <button className='font-Noto_Sans rounded-md mt-1 py-1 px-3 hover:[opacity:80%] font-semibold bg-black text-white'>
-                      Learn more
-                    </button>
                   </div>
                 </div>
               </SplideSlide>
