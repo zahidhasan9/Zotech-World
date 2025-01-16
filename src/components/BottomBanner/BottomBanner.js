@@ -1,6 +1,9 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+import { LuCircleArrowLeft, LuCircleArrowRight } from 'react-icons/lu';
+
 import Car from './assets/CarImg.jpg';
 import HyperOS from './assets/HyperOs.webp';
 import ImgDream from './assets/ImgDream.jpg';
@@ -9,6 +12,8 @@ import Powerbank from './assets/powerbank.webp';
 import PremiumIg from './assets/premiumIg.webp';
 // Default theme
 import '@splidejs/react-splide/css';
+
+import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 
 const Slide = [
   {
@@ -48,16 +53,14 @@ const Slide = [
     src: Powerbank,
     alt: 'Powerbank',
     title: 'Elegant design with fast, powerful and safe charging',
-    details:
-      'Xiaomi 165W | 33W Power Bank 10000 (Integrated Cable)',
+    details: 'Xiaomi 165W | 33W Power Bank 10000 (Integrated Cable)',
   },
   {
     id: 6,
     src: PremiumIg,
     alt: 'PremiumIg',
     title: 'PremiumIg',
-    details:
-      'Come and check out the eligible devices and redeem your reward!.',
+    details: 'Come and check out the eligible devices and redeem your reward!.',
   },
   {
     id: 7,
@@ -84,43 +87,107 @@ const Slide = [
       '400 ISO,auto-focus, Dolby Audio™ and seamless connectivity, rock your audio-visual world.',
   },
 ];
-import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 
 function BottomBanner() {
   return (
     <>
-      <Splide
-        options={{
-          rewind: true,
-          type: 'loop',
-          // autoplay: 'play',
+      <div className='bg-[#F7F7F7] py-10'>
+        <div className='flex justify-center py-5 mt-0 mx-0 mb-12 font-Montserrat_Sans text-3xl  font-bold '>
+          Explore Zotech
+        </div>
+        <Splide
+          hasTrack={false}
+          aria-label='My Slider'
+          options={{
+            rewind: true,
+            type: 'loop',
+            pagination: false,
+            arrows: false,
+            perPage: 3,
+            autoplay: 'play',
+            // padding: '3rem',
+            // next: '.custom-next1',
+            // prev: '.custom-prev1',
+            breakpoints: {
+              475: {
+                perPage: 1,
+                padding: '5rem',
+                // Show 1 slide on mobile
+              },
+              768: {
+                perPage: 2,
+                // Show 1 slide on mobile
+              },
+              1024: {
+                perPage: 2,
+                // Show 2 slides on tablets
+              },
+            },
+          }}
+          className='Banner '
+        >
+          <SplideTrack>
+            {Slide.map((data, index) => (
+              <SplideSlide className='flex justify-center px-2' key={index}>
+                <div className='flex flex-col justify-between bg-gray-600 py-10 rounded-[10px] lg:h-[480px] lg:w-[664px] md:h-[346px] md:w-[442px] max-[450px]:h-[200px] max-[450px]:w-[280px] '>
+                  <Image className='  w-full' src={data.src} alt={data.alt} />
+                  <div className='pl-16 '>
+                    <p className='font-Noto_Sans  hover:[opacity:80%] font-semibold  text-black-700 text-sm'>
+                      {data.title}
+                    </p>
+                    <p className='font-Noto_Sans  hover:[opacity:80%] font-semibold  text-black-700 text-1xl'>
+                      {data.details}
+                    </p>
+                    <button className='font-Noto_Sans rounded-md mt-1 py-1 px-3 hover:[opacity:80%] font-semibold bg-black text-white'>
+                      Learn more
+                    </button>
+                  </div>
+                </div>
+              </SplideSlide>
+            ))}
+          </SplideTrack>
+        </Splide>
 
-          // padding: '5rem',
-        }}
-        aria-label='My Favorite Images'
-        className='Banner'
-      >
-        {Slide.map((data, index) => (
-          <SplideSlide className='' key={index}>
-            <Image
-              className=' BannerImg w-full  relative'
-              src={data.src}
-              alt={data.alt}
-            />
-            <div className='absolute bottom-16 pl-16 w-[40%]'>
-              <p className='font-Noto_Sans  hover:[opacity:80%] font-semibold  text-fuchsia-700 text-3xl'>
-                {data.title}
-              </p>
-              <p className='font-Noto_Sans  hover:[opacity:80%] font-semibold  text-fuchsia-700 text-1xl'>
-                {data.details}
-              </p>
-              <button className='font-Noto_Sans rounded-md mt-1 py-1 px-3 hover:[opacity:80%] font-semibold bg-black text-white'>
-                Learn more
+        {/* <Splide
+          className='custom-slider'
+          hasTrack={false}
+          options={{
+            type: 'loop', // Loop through slides
+            autoplay: true, // Enable autoplay,
+            pagination: false,
+            pauseOnHover: true, // Pause when hovering over a slide
+            interval: 3000, // Delay between slides in ms
+          }}
+          aria-label='My Custom Slider'
+        >
+          <div className='custom-wrapper'>
+            <button className='splide__toggle' type='button'>
+              <span className='splide__toggle__play'>Play</span>
+              <span className='splide__toggle__pause'>Pause</span>
+            </button>
+
+            <div className='splide__progress'>
+              <div className='splide__progress__bar' />
+            </div>
+
+            <SplideTrack>
+              {Slide.map((Dat, tmp) => (
+                <SplideSlide key={tmp}>
+                  <Image src={Dat.src} alt='Slide 1' />
+                </SplideSlide>
+              ))}
+            </SplideTrack>
+            <div className='splide__arrows'>
+              <button className='splide__arrow splide__arrow--prev'>
+                Prev
+              </button>
+              <button className='splide__arrow splide__arrow--next'>
+                Next
               </button>
             </div>
-          </SplideSlide>
-        ))}
-      </Splide>
+          </div>
+        </Splide> */}
+      </div>
     </>
   );
 }
