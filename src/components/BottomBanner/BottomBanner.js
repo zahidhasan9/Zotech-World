@@ -120,7 +120,7 @@ function BottomBanner() {
                     alt={data.alt}
                   />
                   <div className='p-5 '>
-                    <p className=' font-Noto_Sans hover:[opacity:80%] font-semibold  text-black-700 md:text-2xl max-[450px]:text-sm'>
+                    <p className=' font-Noto_Sans hover:[opacity:80%] font-semibold  text-black-700 md:text-2xl text-center max-[450px]:text-sm'>
                       {data.title}
                     </p>
                     <p className='m-1 font-Montserrat_Sans  hover:[opacity:80%] font-light text-black-700 lg:text-sm md:text-sm sm:text-xs text-center max-[450px]:hidden'>
@@ -132,46 +132,6 @@ function BottomBanner() {
             ))}
           </SplideTrack>
         </Splide>
-
-        {/* <Splide
-          className='custom-slider'
-          hasTrack={false}
-          options={{
-            type: 'loop', // Loop through slides
-            autoplay: true, // Enable autoplay,
-            pagination: false,
-            pauseOnHover: true, // Pause when hovering over a slide
-            interval: 3000, // Delay between slides in ms
-          }}
-          aria-label='My Custom Slider'
-        >
-          <div className='custom-wrapper'>
-            <button className='splide__toggle' type='button'>
-              <span className='splide__toggle__play'>Play</span>
-              <span className='splide__toggle__pause'>Pause</span>
-            </button>
-
-            <div className='splide__progress'>
-              <div className='splide__progress__bar' />
-            </div>
-
-            <SplideTrack>
-              {Slide.map((Dat, tmp) => (
-                <SplideSlide key={tmp}>
-                  <Image src={Dat.src} alt='Slide 1' />
-                </SplideSlide>
-              ))}
-            </SplideTrack>
-            <div className='splide__arrows'>
-              <button className='splide__arrow splide__arrow--prev'>
-                Prev
-              </button>
-              <button className='splide__arrow splide__arrow--next'>
-                Next
-              </button>
-            </div>
-          </div>
-        </Splide> */}
       </div>
     </>
   );
