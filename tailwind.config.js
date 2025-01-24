@@ -15,6 +15,7 @@ module.exports = {
         Playwrite: ['Playwrite VN', 'serif'],
         Noto_Sans: ['Noto_Sans', 'serif'],
         Montserrat_Sans: ['Montserrat', 'serif'],
+        Vampire_Wars: ['Vampire Wars', 'sans-serif'],
       },
       colors: {
         // background: "var(--background)",

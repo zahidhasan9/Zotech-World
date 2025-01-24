@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import { LuCircleArrowLeft, LuCircleArrowRight } from 'react-icons/lu';
 
-import Car from './assets/CarImg.jpg';
-import HyperOS from './assets/HyperOs.webp';
-import ImgDream from './assets/ImgDream.jpg';
-import Phone from './assets/phone.webp';
-import Powerbank from './assets/powerbank.webp';
-import PremiumIg from './assets/premiumIg.webp';
+import Car        from '../../public/BannerBotom/CarImg.jpg';
+import HyperOS    from '../../public/BannerBotom/HyperOs.webp';
+import ImgDream   from '../../public/BannerBotom/ImgDream.jpg';
+import Phone      from '../../public/BannerBotom/phone.webp';
+import Powerbank  from '../../public/BannerBotom/powerbank.webp';
+import PremiumIg  from '../../public/BannerBotom/premiumIg.webp';
 // Default theme
 import '@splidejs/react-splide/css';
 

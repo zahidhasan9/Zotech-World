@@ -116,14 +116,14 @@ export default function Footer() {
               <p className='text-white font-Montserrat_Sans font-semibold lg:text-[12px] my-2  max-[700px]:text-xs '>
                 Enter your email address to subscribe to our newsletters
               </p>
-              <from className='max-[700px]:w-[80%]'>
+              <form className='max-[700px]:w-[80%]'>
                 <input
                   className='InputFooter'
                   name='email'
                   type='email'
                   placeholder='Enatr your email addess'
                 />
-              </from>
+              </form>
             </div>
           </div>
           ;

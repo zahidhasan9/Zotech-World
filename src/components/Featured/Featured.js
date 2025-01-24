@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
-import Tb1 from './assets/tb1.webp';
-import Tb2 from './assets/tb3.webp';
-import Tb3 from './assets/tb4.webp';
-import Tb4 from './assets/tb6.webp';
+import Tb1 from '../../public/Featured/tb1.webp';
+import Tb2 from '../../public/Featured/tb3.webp';
+import Tb3 from '../../public/Featured/tb4.webp';
+import Tb4 from '../../public/Featured/tb6.webp';
 
 import Image from 'next/image';
 
@@ -56,7 +56,7 @@ export default function Featured() {
             </button>
           </div>
           <div className='h-[340px] col-span-1 mt-2 md:ml-2.5 sm:ml-2.5 flex flex-col justify-center items-center bg-[#F7F7F7]'>
-            <Image className='h-[114px] w-[114px]' src={Tb3} />
+            <Image className='h-[114px] w-[114px]' src={Tb3} alt="tb3" />
             <p className='font-Noto_Sans text-base font-medium'>
               Redmi Watch 5
             </p>
@@ -68,7 +68,7 @@ export default function Featured() {
             </button>
           </div>
           <div className='h-[340px] col-span-1 mt-2 ml-2.5 flex flex-col justify-center items-center bg-[#F7F7F7]'>
-            <Image className='h-[114px] w-[114px]' src={Tb4} />
+            <Image className='h-[114px] w-[114px]' src={Tb4} alt="tb4" />
             <p className='font-Noto_Sans text-base font-medium'>
               Redmi Buds 6 Pro
             </p>
