@@ -1,6 +1,7 @@
+'use client'
 import React from 'react';
 
-export default function navmenuButton() {
+export default function NavmenuButton() {
   return (
     /* From Uiverse.io by Cevorob */
     <div className=''>

@@ -9,6 +9,7 @@ import Slide4u from "../../public/BannerIMG/Slide4u.webp";
 import Slide5u from "../../public/BannerIMG/Slide5u.webp";
 import Slide6u from "../../public/BannerIMG/Slider6u.webp";
 import Slide7u from "../../public/BannerIMG/slide0.webp";
+
 // Import ReactPlayer
 
 const Slide = [
@@ -29,14 +30,14 @@ const Slide = [
     title: 'Redmi Watch 5 Active',
     details: 'Smart Our Life, Smart Our World',
   },
-  {
-    id: 4,
-    type: 'img',  
-    src: Slide3u, 
-    alt: 'img',
-    title: 'Redmi Note 14 Pro 5G',
-    details: 'The Best Redmi Note 14 Pro 5g 18+ AI Features',
-  },
+  // {
+  //   id: 4,
+  //   type: 'img',  
+  //   src: Slide3u, 
+  //   alt: 'img',
+  //   title: 'Redmi Note 14 Pro 5G',
+  //   details: 'The Best Redmi Note 14 Pro 5g 18+ AI Features',
+  // },
   {
     id: 5,
     type: 'img',  
@@ -98,9 +99,11 @@ function Banner() {
         <p className="font-Noto_Sans hover:[opacity:80%] font-semibold text-fuchsia-700 text-xl">
           {data.details}
         </p>
+        <div>
         <button className="font-Noto_Sans rounded-md mt-1 py-1 px-3 hover:[opacity:80%] font-semibold bg-black text-white">
           Learn more
         </button>
+        </div>
       </div>
       </div>
     </SplideSlide>

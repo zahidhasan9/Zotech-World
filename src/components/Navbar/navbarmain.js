@@ -1,10 +1,21 @@
 'use client';
+import { useState } from 'react'
 import { HiOutlineShoppingBag } from 'react-icons/hi2';
 import { FiUser, FiSearch } from 'react-icons/fi';
 import NavmenuButton from './assets/navmenuButton';
 import Sidebar from './sidebar';
 
 function navbarmain() {
+
+  const [Click, setClick] = useState(false)
+ 
+  const handleClick=()=>{
+    setClick(!Click)
+  } 
+ 
+  console.log(Click ,'sidebar')
+
+
   return (
     <>
       <nav className=' navbar sticky flex justify-between box-border items-center mx-0 my-auto px-5 py-3 '>
@@ -23,11 +34,12 @@ function navbarmain() {
           <FiUser className='logo h-6 w-6  ' />
         </div>
 
-        <div className='menue flex items-center lg:hidden '>
-          <NavmenuButton />
-        </div>
+        <button onClick={handleClick} className='menue flex items-center lg:hidden '>
+          {/* <NavmenuButton  /> */}
+      rimel
+        </button>
       </nav>
-      <Sidebar></Sidebar>
+      <Sidebar Click={Click}/>
     </>
   );
 }

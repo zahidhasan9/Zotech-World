@@ -171,10 +171,10 @@
   /* sidebar css */
   .login {
     text-transform: capitalize;
-    font-family: sans-serif, MiSans Latin;
+    font-family:"MiSans Latin";
     font-size: 20px;
     font-weight: 700;
-    border-bottom: 1.5px solid red;
+    
 
     /* border-bottom: 1px solid #3b373d; */
   }
